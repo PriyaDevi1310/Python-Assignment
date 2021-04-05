@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\title{Header}
+\author{Priya Devi}
+\date{05 April 2021}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+\usepackage[a4paper]{geometry}
+\geometry{textheight=\paperheight, noheadfoot, nomarginpar}
+\setlength{\topskip}{0mm}
+\setlength{\parindent}{0mm}
+
+\begin{document}
+\maketitle
+
+
+\BLOCK{ for x in range(0,10) }
+\begin{center}
+  \includegraphics[width=1.00\textwidth,height=0.25\textheight]{\VAR{image[x]}}
+
+\begin{table}[ht]
+\begin{tabular}{|M{6.8cm}|M{6.8cm}|N}
+\hline
+\textbf{Height} & \VAR{height[x]} &\\[20pt]
+\hline
+\textbf{Width} & \VAR{width[x]} &\\[20pt]
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{center}
+
+\BLOCK{ endfor }
+
+
+
+%# This is a short-form Jinja comment
+
+
+\end{document}
