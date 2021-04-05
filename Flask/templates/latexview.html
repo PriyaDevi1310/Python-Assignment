@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <style type="text/css">
+    /* Styles for wrapping the search box */
+
+
+
+ h1
+  {
+    font-size: 50px;
+    color: #fff;
+    font-family:  cursive;
+  }
+  p
+  {
+    color: #fff;font-family: serif;font-size: 25px;
+  }
+
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center" style="background:linear-gradient(rgba(7,14,32,.28), rgba(7,14,32,0.7)), url('/static/backbg.jpg');height:520px">
+  <h1><i class="fa fa-camera-retro"></i> Thank You!!</h1>
+  <p >Search using the most powerful free image search API in the worlds</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+   
+       
+
+    <div class="col-sm-2">
+     
+    </div>
+    <div class="col-sm-8">
+      
+   <iframe src="/static/imagesearch1.tex" frameborder="0" height="400"
+      width="95%"></iframe>
+ 
+    </div>
+    <div class="col-sm-2">
+     
+    </div>
+  </div>
+  <br>
+  <form action = "http://localhost:5000/imagepost" method="post">
+   <div class="row" id="grid">
+  
+   </div>
+   <center style="display: none;" id="submit"><p><button class="btn btn-danger"><i class="fa fa-mail-forward"></i> Convert to Latex</button></p></center>
+   </form>
+</div>
+
+</body>
+
+</html>
